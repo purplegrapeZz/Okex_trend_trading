@@ -3,7 +3,7 @@ import requests
 import json
 
 def get_mom(syb):
-	url = 'https://www.okexcn.com/api/spot/v3/instruments/{}-usdt/candles?granularity=3600'.format(syb)
+	url = 'https://www.okex.com/api/spot/v3/instruments/{}-usdt/candles?granularity=3600'.format(syb)
 	result = requests.get(url).json()
 	
 	print(result)
