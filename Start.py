@@ -27,22 +27,3 @@ if __name__ == '__main__':
 		client.login(mail_user,mail_pwd) #登录
 		client.send_message(msg)
 		client.quit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
