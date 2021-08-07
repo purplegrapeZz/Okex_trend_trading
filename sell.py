@@ -9,10 +9,10 @@ if __name__ == '__main__':
 		clear.clear()
 		import smtplib #登录发送退出
 		from email.mime.text import MIMEText
-		mail_host = nmsl.mail_host
-		mail_user = nmsl.mail_user
-		mail_pwd = nmsl.mail_pwd
-		mail_receiver = nmsl.mail_receiver
+		mail_host = consts.mail_host
+		mail_user = consts.mail_user
+		mail_pwd = consts.mail_pwd
+		mail_receiver = consts.mail_receiver
 
 		mail_subject = '清仓成功!'
 		mail_content = '全部卖出成功!详情请查看日志~'
@@ -29,10 +29,10 @@ if __name__ == '__main__':
 	except Exception as err:
 		import smtplib #登录发送退出
 		from email.mime.text import MIMEText
-		mail_host = nmsl.mail_host
-		mail_user = nmsl.mail_user
-		mail_pwd = nmsl.mail_pwd
-		mail_receiver = nmsl.mail_receiver
+		mail_host = consts.mail_host
+		mail_user = consts.mail_user
+		mail_pwd = consts.mail_pwd
+		mail_receiver = consts.mail_receiver
 
 		mail_subject = '报警提醒!程序异常退出!'
 		mail_content = '错误提示:</br>%s'%err
